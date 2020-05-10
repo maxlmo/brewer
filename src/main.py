@@ -6,7 +6,7 @@ tempSensor = TemperatureSensor(sensorPath)
 
 try:
     while True:
-        print(time.strftime('%H:%M:%S') +  " temp: " + tempSensor.getCurrentTemperature() + " °C")
+        print(time.strftime('%H:%M:%S') +  " temp: " + str(tempSensor.getCurrentTemperature()) + " °C")
         time.sleep(1)
 except KeyboardInterrupt:
     print("key interrupt")
