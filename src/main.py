@@ -2,7 +2,7 @@ import time, sys
 from temperatureSensor import TemperatureSensor
     
 sensorPath = "/sys/bus/w1/devices/28-0119136e048d/w1_slave"
-tempSensor = TeperatureSensor(sensorPath)
+tempSensor = TemperatureSensor(sensorPath)
 
 try:
     while True:
