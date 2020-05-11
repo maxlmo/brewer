@@ -1,6 +1,7 @@
 from flask_injector import request
 from injector import singleton
 
+
 from src.config import use_fake
 from src.display.fake_led_display import FakeLedDisplay
 from src.display.led_display import LedDisplay
