@@ -58,7 +58,8 @@ li {
     font-size: 5vh;
 }
 
-.set-range-btn {
+#set-range-btn {
+    cursor: pointer;
     margin: 2vh 0;
     border-radius: calc(.25rem - 1px);
     border: none;
