@@ -31,13 +31,13 @@ li {
 }
 
 .temperature {
-    margin-top: 12.5vw;
+    margin-top: 7vh;
 }
 
 .card {
     max-width: 1000px;
+    margin: auto;
     text-align: center;
-    vertical-align: middle;
     height: 40vh;
     color: #FFF;
     border: 1px solid rgba(0, 0, 0, .125);
