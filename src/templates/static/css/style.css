@@ -30,25 +30,41 @@ li {
     max-width: 12000px;
 }
 
-.temperature {
-    margin-top: 7vh;
+.temperature-card {
+    background-color: #275DAD;
+    color: #FFF;
+    border-radius: calc(.25rem - 1px);
+    font-weight: bold;
+    font-size: 15vh;
 }
 
 .card {
     max-width: 1000px;
     margin: auto;
     text-align: center;
-    height: 40vh;
-    color: #FFF;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
-    background-color: #275DAD;
-    font-weight: bold;
-    font-size: 15vh;
 }
 
 .range-container {
     margin-top: 20px;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
+}
+
+.range-input {
+    text-align: center;
+    width: 15vw;
+    min-width: 85px;
+    font-size: 5vh;
+}
+
+.set-range-btn {
+    margin: 2vh 0;
+    border-radius: calc(.25rem - 1px);
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5vh;
+    background-color: #CED3DC;
+    padding: 0 5vh;
 }
