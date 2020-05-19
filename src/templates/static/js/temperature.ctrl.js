@@ -46,7 +46,7 @@ export const updateRange = () => {
 }
 
 function isValidInput(value) {
-    return 0 < value && value < 100;
+    return 0 <= value && value <= 100;
 }
 
 const refreshView = () => {
