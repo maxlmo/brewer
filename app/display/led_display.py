@@ -1,4 +1,4 @@
-from src.config import use_fake
+from ..config import use_fake
 
 if not use_fake:
     from luma.core.interface.serial import spi, noop

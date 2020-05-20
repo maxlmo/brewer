@@ -7,9 +7,9 @@ import threading
 import atexit
 import time
 
-from src.dependency_injection import configure
-from src.sensor.fake_temperature_sensor import FakeTemperatureSensor
-from src.sensor.temperature_sensor import TemperatureSensor
+from app.dependency_injection import configure
+from app.sensor.fake_temperature_sensor import FakeTemperatureSensor
+from app.sensor.temperature_sensor import TemperatureSensor
 
 min = 50
 max = 100
@@ -28,7 +28,7 @@ thread = threading.Thread()
 def create_app():
     app: Flask = Flask(__name__)
     app.config.update(TEMPLATES_AUTO_RELOAD=True)
-    app._static_folder = os.path.abspath("templates/static/")
+    app._static_folder = os.path.abspath("app/templates/static/")
 
     @app.route("/")
     def index():
@@ -72,7 +72,3 @@ def create_app():
     FlaskInjector(app=app, modules=[configure])
     atexit.register(stop_thread)
     return app
-
-
-if __name__ == '__main__':
-    create_app().run(debug=True, host='0.0.0.0')

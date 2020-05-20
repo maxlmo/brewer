@@ -2,11 +2,11 @@ from flask_injector import request
 from injector import singleton
 
 
-from src.config import use_fake
-from src.display.fake_led_display import FakeLedDisplay
-from src.display.led_display import LedDisplay
-from src.sensor.fake_temperature_sensor import FakeTemperatureSensor
-from src.sensor.temperature_sensor import TemperatureSensor
+from .config import use_fake
+from .display.fake_led_display import FakeLedDisplay
+from .display.led_display import LedDisplay
+from .sensor.fake_temperature_sensor import FakeTemperatureSensor
+from .sensor.temperature_sensor import TemperatureSensor
 
 
 def configure(binder):

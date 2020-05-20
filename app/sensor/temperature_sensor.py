@@ -1,6 +1,6 @@
 from injector import inject
 
-from src.config import temp_sensor_path
+from ..config import temp_sensor_path
 
 
 class TemperatureSensor:
