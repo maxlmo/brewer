@@ -8,6 +8,8 @@ import atexit
 import time
 
 from app.dependency_injection import configure
+from app.display import get_display
+from app.sensor import get_temperature_sensor
 from app.sensor.fake_temperature_sensor import FakeTemperatureSensor
 from app.sensor.temperature_sensor import TemperatureSensor
 
@@ -56,9 +58,12 @@ def create_app():
 
     def loop():
         global current_temperature
-        temp_sensor = FakeTemperatureSensor()
+        temp_sensor = get_temperature_sensor()
+        display = get_display()
         while True:
             current_temperature = temp_sensor.read_temperature()
+            display.display_text(str(current_temperature))
+            print(current_temperature)
             time.sleep(POOL_TIME)
 
     def start_threat():
