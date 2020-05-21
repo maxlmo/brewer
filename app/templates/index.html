@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brewer</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li>Brewer</li>
+    </ul>
+</nav>
+
+<div class="content">
+    <div class="card temperature-card">
+        <div class="temperature"><span id="temperatureValue">00</span>°</div>
+    </div>
+    <div class="card range-container">
+        <input id="min-temperature" class="range-input" type="number">
+        <button id="set-range-btn">Set</button>
+        <input id="max-temperature" class="range-input" type="number">
+    </div>
+</div>
+
+</body>
+
+<script type="module" src="/static/js/app.js"></script>
+</html>

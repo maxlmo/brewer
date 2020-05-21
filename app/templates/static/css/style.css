@@ -1,0 +1,71 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /*background-color: #CED3DC;*/
+    background-color: #828A95;
+    color: #FFF;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: large;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    max-width: 12000px;
+}
+
+.temperature-card {
+    background-color: #275DAD;
+    color: #FFF;
+    border-radius: calc(.25rem - 1px);
+    font-weight: bold;
+    font-size: 15vh;
+}
+
+.card {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.range-container {
+    margin-top: 20px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.range-input {
+    text-align: center;
+    width: 15vw;
+    min-width: 85px;
+    font-size: 5vh;
+}
+
+#set-range-btn {
+    cursor: pointer;
+    margin: 2vh 0;
+    border-radius: calc(.25rem - 1px);
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5vh;
+    background-color: #CED3DC;
+    padding: 0 5vh;
+}
