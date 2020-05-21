@@ -17,7 +17,7 @@ min = 50
 max = 100
 
 
-POOL_TIME = 5
+POOL_TIME = 2
 
 # variables that are accessible from anywhere
 current_temperature = 0
@@ -50,7 +50,7 @@ def create_app():
     @app.route("/temp")
     def temp():
         global current_temperature
-        return str(current_temperature)
+        return str(round(current_temperature, 0))
 
     def stop_thread():
         global thread

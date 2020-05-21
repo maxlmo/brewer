@@ -16,4 +16,4 @@ class TemperatureSensor:
         temperature_str = lines[1].find('t=')
         temperature_value = lines[1][temperature_str + 2:]
         in_celsius = float(temperature_value) / 1000.0
-        return round(in_celsius, 0)
+        return round(in_celsius, 1)
