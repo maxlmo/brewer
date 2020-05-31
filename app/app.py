@@ -63,7 +63,6 @@ def create_app():
         while True:
             current_temperature = temp_sensor.read_temperature()
             display.display_text(str(current_temperature))
-            print(current_temperature)
             time.sleep(POOL_TIME)
 
     def start_threat():
